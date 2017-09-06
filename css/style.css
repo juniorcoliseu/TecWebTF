@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background: #f7f7f7;
@@ -28,9 +32,11 @@ header {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     height: 60px;
     background: #525794;
     align-content: center;
+    padding: 0 15px;
 }
 
 nav img.logo  {
@@ -42,6 +48,7 @@ nav ul {
     display: flex;
     flex: 1;
     margin: 0;
+    justify-content: flex-start;
 }
 
 nav ul li {
@@ -62,6 +69,19 @@ nav ul li a, nav ul li a:visited {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 526px) {
+    nav ul {
+        justify-content: center;
+        padding: 0;
+    }
+    
+    nav {
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+} 
 
 footer {
     background: gray;
