@@ -79,6 +79,6 @@ input, select {
     border-radius: 3px;
 }
 
-input:focus, input:active {
+input:focus, input:active, select:focus, select:active {
     outline:0;
 }
