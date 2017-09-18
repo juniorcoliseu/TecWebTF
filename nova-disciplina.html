@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">  
+    <title>Nova Disciplina</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nova-disciplina.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.png" class="logo" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form">
+        <form method="POST">
+            <h3>Cadastrar Nova Disciplina</h3>
+            <div class="form-container">
+                <div class="form-row">
+                    <label for="nome-disc">Nova Disciplina:</label>
+                    <input type="text" name="nome-disc" class="form-input" autofocus/>
+                </div>
+                <div class="form-row">
+                    <label for="nome-prof">Professor Responsavel:</label>
+                    <input type="text" name="nome-prof" class="form-input" autofocus/>
+                </div>
+                <div class="form-row">
+                    <label for="dur-aula">Duração Aula:</label>
+                    <input type="text" name="dur-aula" class="form-input" />
+                </div>
+                <div class="form-row">
+                    <label for="chm">Carga Horaria Mensal:</label>
+                    <input type="text" name="chm" class="form-input" />
+                </div>
+                <div class="form-row">
+                    <label for="emaildia-sem">Dia da Semana:</label>
+                    <input type="text" name="dia-sem" class="form-input" />
+                </div>
+                <div class="form-row">
+                    <label for="cdc">Conteudo do Curso:</label>
+                    <input type="text" name="cdc" class="form-input" />
+                </div></br>
+                <div class="form-row">
+                    <button type="submit" class="form-button form-button-principal">Cadastrar</button>
+                    <button type="button" class="form-button">Voltar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>©Copyright - Todos os direitos reservados - 2017</p>
+    </footer>
+</body>
+</html>
